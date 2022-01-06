@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPD Treskavička jezera</title>
+    <link rel="icon" href="../images/logo-removebg-preview.png" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!--End Bootstrap-->
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!--End Font-->
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--Navigacijska traka-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><img src="../images/logo-removebg-preview.png" alt="logo" /><span
+            class="custom-font text-dark"
+          >
+            EPD Treskavička jezera</span
+          ></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="html/homepageEN.html" class="nav-link">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a href="#o-nama" class="nav-link">About</a>
+            </li>
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">Latest News</a>
+            </li>-->
+            <li class="nav-item">
+              <a href="gallery/galleryEN.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#kontakt" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="bulletinEN.html" class="nav-link">Bulletin</a>
+            </li>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Documents
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light">
+                  <li><a class="dropdown-item" href="#">Acts</a></li>
+                  <li>
+                    <a class="dropdown-item" href="statut.html"
+                      >Statute (BOS)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Language
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light">
+                  <li>
+                    <a class="dropdown-item" href="../index.html"
+                      ><img
+                        src="../images/bosnia-and-herzegovina.png"
+                        class="languages"
+                        alt=""
+                      />Bosnian</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href=""
+                      ><img
+                        src="../images/united-states-of-america.png"
+                        class="languages"
+                        alt=""
+                      />English</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Carousel-->
+    <section class="bg-dark text-light carousel-section mb-5" id="carousel-id">
+      <div
+        id="homepage-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-interests"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-interests"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-interests"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-interests"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="../images/carousel1.1.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="../images/carousel2.2.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="../images/carousel3.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="../images/carousel4.jpg"
+              alt="Fourth slide"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#homepage-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Back</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#homepage-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--O nama-->
+    <a name="o-nama"></a>
+    <section class="bg-dark p-5 mt-5">
+      <h2 class="custom-font text-light">About</h2>
+      <p class="text-light left">
+        Ecological mountaineering association "Treskavička jezera" Trnovo was
+        founded in 2008. All those who love and respect nature and natural
+        beauty are welcome. In 2015, EPD TJT built a mountain house on the Great
+        Lake in Treskavica. The house is equipped with complete inventory and is
+        always ready to receive hikers. The capacity of the house is 16. For the
+        stay - overnight stay and use of the house, it is necessary to make an
+        appointment in advance at the above-mentioned contacts. Ecological
+        mountaineering association "Treskavička jezera" Trnovo currently has 151
+        members.
+      </p>
+    </section>
+    <!--Novosti preview-->
+    <section class="p-5 bg-light">
+      <h2 class="custom-font text-dark">Latest News</h2>
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light shadow-lg">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"></div>
+                <h3 class="card-title mb-3 custom-font">
+                  HAPPY INTERNATIONAL MOUNTAIN DAY
+                </h3>
+                <p class="card-text">
+                  International Mountain Day has been declared by the UN General
+                  Assembly 2003, December 11, after the International Year the
+                  mountain, declared by the UN in 2002, highlighted the need
+                  constant awareness of the enormous importance of mountains and
+                  sustainable developing their environment to preserve quality
+                  of life population.
+                </p>
+                <!--<a href="#" class="btn btn-success">Čitaj dalje</a>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-success text-light shadow-lg">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"></div>
+                <h3 class="card-title mb-3 custom-font">
+                  2nd MOUNTAINEERING MEMORIAL HIKE “ZAIM IMAMOVIĆ- 2021”
+                </h3>
+                <p class="card-text">
+                  In honor of this great man, we have organized a second
+                  mountaneering memorial march to the place of his death, Čelina
+                  1,267 m above sea level (Treskavica mountain) on October 9,
+                  2021 (Saturday).
+                  <br />
+                  <br />
+                </p>
+                <!--<a href="#" class="btn btn-success">Čitaj dalje</a>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light shadow-lg">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"></div>
+                <h3 class="card-title mb-3 custom-font">
+                  MEMBERSHIP PRICE NOTICE FOR 2021
+                </h3>
+                <p class="card-text">
+                  <br />
+                  Seniors - 20KM <br />
+                  Juniors - 10KM <br />
+                  Pupils / Students - 10KM <br />
+                  New members + 5KM for making a new card
+                  <br />
+                  <br />
+                  <br />
+                </p>
+                <!--<a href="#" class="btn btn-success">Čitaj dalje</a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-5 bg-dark" id="pitanja">
+      <div class="container">
+        <h2 class="custom-font text-light mb-4">FAQ</h2>
+        <div class="accordion accordion-flush" id="pitanja">
+          <!-- Prvo pitanje -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                How can I become a member?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success btn-outline-success"
+                type="button "
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                Pitanje 2
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success btn-outline-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                Pitanje 3
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success btn-outline-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                Pitanje 4
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Pitanje 5
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Kontakt-->
+    <section class="p-5 justify-content-center">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">
+              <a name="kontakt">Contact Information</a>
+            </h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Address:</span> Trnovo bb. 71223, Trnovo
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Tel/Fax:</span> 033/439-184
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> 060/337-48-47
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                <a href="mailto:treskavickajezera@gmail.com"
+                  >treskavickajezera@gmail.com
+                </a>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"
+                  >Find us on:
+                  <a
+                    href="https://hr-hr.facebook.com/groups/189388407750692/"
+                    target="_blank"
+                    ><i class="bi bi-facebook"></i></a
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md justify-content-center">
+            <div id="map" style="width: 400px; height: 300px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 EPD Treskavička jezera</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    <!--Bootstrap JScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!--End Bootstrap JScript-->
+    <!--Map API-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic2VsbWFjMjciLCJhIjoiY2t4aHl6aTV6NDN2ZTJ4bzV5c2toY3cxMyJ9.iJFXlASZf4ngkB9DD7BQhQ";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [18.449022, 43.667566],
+        zoom: 11.5,
+      });
+    </script>
+    <!--End Map API-->
+  </body>
+</html>
